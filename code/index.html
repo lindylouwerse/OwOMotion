@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <title>OwO Motion</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" title="Homepage">
+                <img src="img/logo-owo-final.png" alt="Logo" id="logo">
+            </a>
+            <i class="fas fa-bars"></i>
+            <ul class="mainnav">
+                <li id="home">
+                    <a href="#">Home</a>
+                </li>
+                <li id="services">
+                    <a href="#">Services</a>
+                </li>        
+                <li id="gallery">
+                    <a href="#">Gallery</a>
+                </li>         
+                <li id="aboutus">
+                    <a href="#">About us</a>
+                </li>   
+                <li id="contact">
+                    <a href="#">Contact</a>
+                </li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="banner">
+            <button>
+                CLICK HERE TO SEE MORE
+            </button>
+        </div>
+        <section id="intro">
+            <h1>OwO Motion</h1>
+            <p>
+                Hi! We are a company that is creating <span>video's, animations and graphics!</span> Are you interested?
+            </p>
+            <button>
+                Book free consultations
+            </button>
+            <hr>
+        </section>
+        <section id="reviews">
+            <h2>Customers reviews</h2>
+            <div>
+                <h3>* * * * *</h3>
+                <p>The team was very helpful and patient through several change requests. Overall a great experience despite several unforseen delays.</p>
+                <p>- Jared -</p>
+            </div>
+            <div>
+                <h3>* * * * *</h3>
+                <p>OwO Motion's friendly, professional staff made the creation of a short training video a pleasure.</p>
+                <p>- Andrew -</p>
+            </div>
+            <div>
+                <h3>* * * * *</h3>
+                <p>I was blown away by the completed videos! The OwO Motion team so perfectly interpreted what we were trying to achieve, and it was an absolute pleasure to work with them.</p>
+                <p>- Jennifer -</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <h3>OwO Motion - video and animation production</h3> 
+        <div id="socialsbox">
+            <article class="contactInfo">
+                <p><i class="fas fa-phone"></i>: 12345678</p>
+                <p><i class="far fa-envelope"></i>: OwOMotion@hotmail.com</p>
+                <p><i class="fas fa-home"></i>: Streetname 1, 6000, Kolding</p>
+                <p></p>
+            </article>
+            <article class="icons">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>    
+            </article>
+        </div>
+        <article>
+            <p id="copyright"><i class="far fa-copyright"></i> 2022OwOMotion</p>
+        </article>
+    </footer>
+    <script> /*For the burger menu (Javascript)*/
+        const navbarToggle = () => {
+        const nav = document.querySelector('.mainnav'); 
+        nav.classList.toggle('toggleShow');
+        } 
+        document.querySelector('.fa-bars').addEventListener('click', navbarToggle);
+    </script>
+</body>
+</html>

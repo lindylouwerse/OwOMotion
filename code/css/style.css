@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    background-color: black;
+}
+p, h1, h2, h3, button, a{
+    color: white;
+    font-family: Como;
+}
+
+/*header*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 60px;
+}
+header ul {
+    display: none;
+}
+li a {
+    text-decoration: none;
+    font-family: Como;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+#home a:hover {
+    color: #9B5DE5;
+}
+#services a:hover {
+    color: #FEE440;
+}
+#gallery a:hover {
+    color: #0EF9E6;
+}
+#aboutus a:hover {
+    color: #03FF53;
+}
+#contact a:hover {
+    color: #FB2DC0;
+}
+.fa-bars {
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+}
+.toggleShow {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; /*Remove bullets*/
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    left: 0; /*Stay to left*/
+    background-color:black;
+    width: 100%;
+}
+.toggleShow li, 
+.toggleShow a {
+    padding: 20px;
+}
+#logo {
+    width: 50px;
+
+}
+
+
+/*main*/
+#banner {
+    height: 250px;
+    background-image: url(../img/header\ img.png);
+    background-size: cover;
+    text-align: center;
+}
+#banner button {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 20px;
+    border: none;
+    margin-top: 100px;
+    width: 200px;
+}
+/*#banner button:hover {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+}*/
+#intro {
+    text-align: center;
+}
+#intro h1 {
+    font-size: 50px;
+    color: #9B5DE5;
+    margin: 50px;
+}
+#intro p {
+    font-size: 30px;
+    margin: 0 70px;
+}
+#intro button {
+    background-image: linear-gradient(to right, #FB2DC0,#9B5DE5,#1269F3,#0EF9E6,#03FF53,#FEE440);
+    font-size: 25px;
+    padding: 20px;
+    margin: 50px;
+    border: none;
+}
+#intro span {
+    color: #9B5DE5;
+}
+#reviews {
+    text-align: center;
+}
+#reviews div {
+    margin: 70px;
+}
+#reviews h2 {
+    font-size: 50px;
+    color: #FB2DC0;
+    margin: 50px;
+}
+#reviews h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #FB2DC0;
+}
+#reviews p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+/*footer*/
+/*footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        "headline headline"
+        "contactInfo icons"
+        "copyright copyright";
+}
+footer div h3 {
+    grid-area: headline;
+}
+footer div .contactInfo {
+    grid-area: contactInfo;
+}
+footer div .icons {
+    grid-area: icons;
+}
+footer div #copyright {
+    grid-area: copyright;
+}*/
+footer #socialsbox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+footer h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+footer .contactInfo p {
+    margin: 20px 0;
+}
+footer .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .icons a {
+    font-size: 30px;
+}
+footer #copyright {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+/*media queries for desktop*/
+@media screen and (min-width: 700px) {
+    header nav {
+        height: 131px;
+        /*header becomes bigger on desktop*/
+    }
+    header ul {
+        display: block;
+    }
+    header li {
+        display: inline;
+    }
+    header li a {
+        font-size: 40px;
+    }
+    .fa-bars {
+        display: none; 
+        /* So burger menu disapears when going to desktop size*/
+    }
+    #logo {
+        width: 90px;
+    }
+
+    /*main*/
+    #banner {
+        height: 850px;
+    }
+    #banner button {
+        font-size: 50px;
+        margin: 250px; 
+        width: 500px;
+    }
+    #intro h1 {
+        font-size: 60px;
+        margin: 50px;
+    }
+    #intro p {
+        font-size: 40px;
+        margin: 0 220px;
+    }
+    #intro button {
+        font-size: 40px;
+    }
+    #reviews div {
+        margin: 70px;
+    }
+    #reviews h2 {
+        font-size: 60px;
+        margin: 50px;
+    }
+    #reviews h3 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    #reviews p {
+        font-size: 40px;
+        margin: 20px 150px;
+    }
+
+    /*footer*/
+    footer h3 {
+        font-size: 35px;
+        text-align: center;
+        margin: 40px 0;
+    }
+    footer .contactInfo p {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    footer .icons a {
+        font-size: 50px;
+    }
+    footer #copyright {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
